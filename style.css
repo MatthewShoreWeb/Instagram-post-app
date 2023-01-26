@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Calibri';
+    background-color: lightcoral;
+}
+
+#content {
+    /* background-color: #D4AF37; */
+    background: rgb(212, 175, 55);
+    background: linear-gradient(360deg, rgba(212, 175, 55, 1) 35%, rgba(255, 215, 0, 1) 100%);
+    width: 550px;
+    aspect-ratio: 4 / 5;
+}
+
+#leavesContainer {
+    position: absolute;
+    height: 100%;
+    width: 550px;
+    height: 674px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#leavesContainer > div {
+    width: 550px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leaves {
+  margin: 7px;
+  height: 60px;
+  width: 50px;
+
+}
+
+.secondLeaf {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.thirdLeaf {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+#contentTitle {
+    height: 15%;
+    border-bottom: 1px solid #ffd700;
+    font-weight: bold;
+}
+
+#contentTitle > img {
+    height: 40%;
+    width: 7.5%;
+    margin: 8px;
+    z-index: 0;
+}
+
+#flip {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#contentImage {
+    height: 50%;
+    border-bottom: 1px solid gold;
+}
+
+#mainImage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    background-color: cornflowerblue;
+}
+
+#imageUpload {
+    background-color: white;
+    height: 25px;
+    padding: 5px;
+}
+
+#contentFooter {
+    height: 35%;
+    padding: 5px;
+}
+
+input {
+    height: 25px;
+    width: 50%;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+}
+
+textarea {
+    width: 50%;
+    border: 0;
+    resize: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contentTitle,
+#contentFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    z-index: 100;
+}
+
+#contentFooter {
+    font-size: 19px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
